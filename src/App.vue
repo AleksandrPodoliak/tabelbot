@@ -3,24 +3,28 @@
 </template>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+
+@import './style/reset.css';
+@import './style/fonts.css';
+@import './style/basic.scss';
+
+.container {
+  width: 1920px;
+  margin: 0 auto;
+
+  &-inner {
+    padding: 60px 250px;
+  }
 }
 
-nav {
-  padding: 30px;
+@media screen and (max-width: 420px) {
+  .container {
+    width: 100%;
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+    &-inner {
+      padding: 2.5rem 1.5rem;
     }
   }
 }
+
 </style>

@@ -1,3 +1,16 @@
 {
-  "message": "hello i18n !!"
+  "about": {
+    "title": "",
+    "subtitle1": "",
+    "list1_item1": "",
+    "list1_item2": "",
+    "subtitle2": "",
+    "list2_item1": "",
+    "list2_item2": "",
+    "list2_item3": "",
+    "list2_item4": "",
+    "subtitle3": "",
+    "list3_item1": "",
+    "list3_item2": ""
+  }
 }
