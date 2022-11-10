@@ -1,28 +1,24 @@
 <template>
   <!-- <headerBlock /> -->
   <aboutUsBlock />
-  <!-- <reasonsBlock />
-  <learningBlock />
-  <priceBlock />
-  <tgBotBlock />
-  <teachersBlock />
-  <galleryBlock /> 
-  <contactsBlock />
-  <footerBlock /> -->
+  <procuringBlock />
+  <connectionBlock />
+  <calculatorBlock />
+  <instructionBlock />
+  <reportBlock />
+  <footerBlock />
 </template>
 
 <script>
 
 // import headerBlock from '@/components/headerBlock.vue';
 import aboutUsBlock from '@/components/aboutUsBlock.vue';
-// import reasonsBlock from '@/components/reasonsBlock.vue';
-// import learningBlock from '@/components/learningBlock.vue';
-// import priceBlock from '@/components/priceBlock.vue';
-// import tgBotBlock from '@/components/tgBotBlock.vue';
-// import teachersBlock from '@/components/teachersBlock.vue';
-// import galleryBlock from '@/components/galleryBlock.vue';
-// import contactsBlock from '@/components/contactsBlock.vue';
-// import footerBlock from '@/components/footerBlock.vue';
+import procuringBlock from '@/components/procuringBlock.vue';
+import connectionBlock from '@/components/connectionBlock.vue';
+import calculatorBlock from '@/components/calculatorBlock.vue';
+import instructionBlock from '@/components/instructionBlock.vue';
+import reportBlock from '@/components/reportBlock.vue';
+import footerBlock from '@/components/footerBlock.vue';
 
 export default {
 
@@ -30,14 +26,12 @@ export default {
   components: {
     // headerBlock,
     aboutUsBlock,
-    // reasonsBlock,
-    // learningBlock,
-    // priceBlock,
-    // tgBotBlock,
-    // teachersBlock,
-    // galleryBlock,
-    // contactsBlock,
-    // footerBlock,
+    procuringBlock,
+    connectionBlock,
+    calculatorBlock,
+    instructionBlock,
+    reportBlock,
+    footerBlock,
   },
 
 }

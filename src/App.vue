@@ -17,14 +17,4 @@
   }
 }
 
-@media screen and (max-width: 420px) {
-  .container {
-    width: 100%;
-
-    &-inner {
-      padding: 2.5rem 1.5rem;
-    }
-  }
-}
-
 </style>

@@ -12,5 +12,50 @@
     "subtitle3": "",
     "list3_item1": "",
     "list3_item2": ""
+  },
+  "procuring": {
+    "title": "",
+    "list1_item1": "",
+    "list1_item2": "",
+    "list1_item3": "",
+    "list1_item4": "",
+    "subtitle1": "",
+    "list2_item1": "",
+    "list2_item2": "",
+    "list2_item3": "",
+    "list2_item4": "",
+    "list2_item5": "",
+    "list2_item6": "",
+    "list2_item7": ""
+  },
+  "connection": {
+    "title": "",
+    "text_item1": "",
+    "text_item2": "",
+    "text_item3": "",
+    "text_button": ""
+  },
+  "instruction": {
+    "title": "",
+    "text_item1": "",
+    "text_item2": "",
+    "text_item3": "",
+    "text_item4": "",
+    "text_button": ""
+  },
+  "report": {
+    "title": "",
+    "list_item1": "",
+    "list_item2": ""
+  },
+  "calculator": {
+    "title": "",
+    "subtitle": "",
+    "label_item1": "",
+    "label_item2": "",
+    "label_item3": "",
+    "descr_free": "",
+    "text_button": "",
+    "text_button_free": ""
   }
 }
