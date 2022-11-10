@@ -67,7 +67,7 @@ export default {
   data() {
     return {
       countOfemployee: 3,
-      usd_cur: 0.00,
+      usd_cur: 0,
     }
   },
   async mounted() {
@@ -94,7 +94,7 @@ export default {
       return this.countOfemployee && this.countOfemployee > 3 ? this.countOfemployee.toFixed(2) : "0.00";
     },
     uahSum() {
-      const uahSum = this.usd_cur && this.countOfemployee && this.countOfemployee > 3 ? this.countOfemployee*this.usd_cur.toFixed(2) : 0;
+      const uahSum = this.usd_cur && this.countOfemployee && this.countOfemployee > 3 ? this.countOfemployee*this.usd_cur : 0;
       return uahSum ? uahSum.toFixed(2) : "0.00";
     },
   },
