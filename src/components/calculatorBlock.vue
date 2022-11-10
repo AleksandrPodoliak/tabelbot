@@ -76,7 +76,8 @@ export default {
     };
     
     try {
-      this.usd_cur = await requester(payload);
+      const data = await requester(payload);
+      this.usd_cur = data.result;
       console.log('this.usd_cur :>> ', this.usd_cur);
     } catch (error) {
       console.error(error);
