@@ -25,11 +25,11 @@ export default {
 <style lang="scss" scoped>
 
 .footer {
+  min-width: 1900px;
   background: #27316B;
   box-shadow: 0px 4px 4px rgba(0, 35, 120, 0.25);
   
   &-wrapper {
-    width: 100%;
     padding: 16px 130px;
     display: flex;
     justify-content: space-between;

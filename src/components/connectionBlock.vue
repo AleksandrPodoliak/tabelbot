@@ -1,4 +1,5 @@
 <template>
+  <a id="anchor2"></a>
   <div class="connection container container-inner">
     <div class="title">
       {{ this.$t('connection.title') }}

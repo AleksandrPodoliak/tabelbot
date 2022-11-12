@@ -1,4 +1,5 @@
 <template>
+  <a id="anchor1"></a>
   <div class="procuring container container-inner">
     <div class="title">
       {{ this.$t('procuring.title') }}

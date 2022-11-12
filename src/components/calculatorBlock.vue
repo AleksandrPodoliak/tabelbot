@@ -1,4 +1,5 @@
 <template>
+  <a id="anchor3"></a>
   <div class="calculator container container-inner">
     <div class="title">
       {{ this.$t('calculator.title') }}
@@ -49,39 +50,88 @@
         :width="buttonWidth"
         :text="buttonText"
         :disabled="!countOfemployee"
+        @click="togglePopUpPrice"
       />
     </div>
+
+
+    <popUp 
+      v-if="showPoUpPrice"
+      class="popup"
+      :title="'Оплата услуги таймбот'"
+      @close="togglePopUpPrice"
+    >
+      <formPrice
+        :full-form="countOfemployee > 3"
+        :currentData="{
+          sum: uahSum,
+          countOfemployee: countOfemployee,
+        }"
+        @success="togglePopUpPrice(); togglePopUpSuccess();"
+        @error="togglePopUpPrice(); togglePopUpError();"
+      />
+    </popUp>
+
+    <popUp 
+      v-if="showPoUpSuccess"
+      class="popup"
+      :title="$t('popup.title_success')"
+      :button_back="false"
+      @close="showPoUpSuccess = false"
+      @click="showPoUpSuccess = false"
+    >
+
+    </popUp>
+
+    <popUp 
+      v-if="showPoUpError"
+      class="popup"
+      :title="$t('popup.title_error')"
+      :button_back="false"
+      @close="showPoUpError = false"
+      @click="showPoUpError = false"
+    >
+      <img class="popup__error_img" src="../assets/images/contacts-error.png" alt="error">
+    </popUp>
   </div>
 </template>
 
 <script>
-import { requester } from '@/requester';
+// import { requester } from '@/requester';
 
+import popUp from './popUp.vue'
+import formPrice from './formPrice.vue';
 import customButton from './customButton.vue';
 
 export default {
   name: "calculatorBlock",
   components: {
+    popUp,
+    formPrice,
     customButton,
   },
   data() {
     return {
       countOfemployee: 3,
-      usd_cur: 0,
+      // usd_cur: 0,
+      usd_cur: 30,
+
+      showPoUpPrice: false,
+      showPoUpSuccess: false,
+      showPoUpError: false,
     }
   },
   async mounted() {
-    const payload  = {
-      method: 'currency'
-    };
+    // const payload  = {
+    //   method: 'currency'
+    // };
     
-    try {
-      const data = await requester(payload);
-      this.usd_cur = data.result;
-      console.log('this.usd_cur :>> ', this.usd_cur);
-    } catch (error) {
-      console.error(error);
-    }
+    // try {
+    //   const data = await requester(payload);
+    //   this.usd_cur = data.result;
+    // } catch (error) {
+    //   console.error(error);
+    // }
   },
   computed: {
     buttonWidth() {
@@ -96,6 +146,17 @@ export default {
     uahSum() {
       const uahSum = this.usd_cur && this.countOfemployee && this.countOfemployee > 3 ? this.countOfemployee*this.usd_cur : 0;
       return uahSum ? uahSum.toFixed(2) : "0.00";
+    },
+  },
+  methods: {
+    togglePopUpPrice() {
+      this.showPoUpPrice = !this.showPoUpPrice;
+    },
+    togglePopUpSuccess() {
+      this.showPoUpSuccess = !this.showPoUpSuccess;
+    },
+    togglePopUpError() {
+      this.showPoUpError = !this.showPoUpError;
     },
   },
   watch: {

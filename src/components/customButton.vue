@@ -5,11 +5,8 @@
     :disabled="disabled"
     :style="{ width: width}"
   >
-    <span
-      class="button__text"
-    >
-      {{ text }}
-    </span>
+    <img v-if="icon" class="button__icon" :src="icon" alt="icon">
+    <span class="button__text"> {{ text }} </span>
   </button>
 </template>
 
@@ -21,6 +18,7 @@ export default {
     secondary: {
       default: false
     },
+    icon: String,
     text: String,
     disabled: {
       default: false
@@ -50,6 +48,10 @@ export default {
   line-height: 150%;
   color: #FFFFFF;
   text-transform: uppercase;
+
+  &__icon {
+    margin-right: 20px;
+  }
 
   &:hover {
     background: #F10404;

@@ -1,4 +1,10 @@
 {
+  "header": {
+    "nav":  ["О ПРОДУКТЕ", "ВОЗМОЖНОСТИ", "ПОДКЛЮЧЕНИЕ", "ПРАЙС", "ИНСТРУКЦИЯ", "ОТЧЕТ"]
+  },
+  "presentation": {
+    "text": "ваш инструмент для учета времени сотрудников на рабочем месте"
+  },
   "about": {
     "title": "Что такое TIMEBOT?",
     "subtitle1": "Для работодателя:",
@@ -57,5 +63,38 @@
     "descr_free": "До 3-х сотрудников БЕСПЛАТНО*",
     "text_button": "КУПИТЬ",
     "text_button_free": "ПОЛУЧИТЬ БЕСПЛАТНО"
+  },
+  "popup": {
+    "title": "ОПЛАТА УСЛУГИ TIMEBOT",
+    "title_success": "СПАСИБО!",
+    "title_error": "oй-йой",
+    "input_companyname": {
+      "label": "название компании",
+      "placeholder": "Введите название компании",
+      "error": "* Заполните поле"
+    },
+    "input_name": {
+      "label": "ФИО контактного лица",
+      "placeholder": "Введите ваше ФИО",
+      "error": "* Заполните поле"
+    },
+    "input_phone": {
+      "label": "Номер телефона",
+      "placeholder": "XXXXXXXXX",
+      "error": "* Формат номера - XXXXXXXXX"
+    },
+    "input_mail": {
+      "label": "Email",
+      "placeholder": "Введите ваш email",
+      "error": "* Формат email - "
+    },
+    "input_check": {
+      "document": "Я принимаю условия <a style=\"color: #FF725E; text-decoration: underline;\" href=\"https://drive.google.com/file/d/1dbrJEK_6aiTgj0Oa7ii6eb2J1oQvtl2c/view\" target=\"_blank\">Договора</a>"
+    },
+    "sum": "Всего",
+    "curr": "грн",
+    "button": "ПОЛУЧИТЬ БЕСПЛАТНО",
+    "button_pay": "КУПИТЬ",
+    "button_back": "Назад"
   }
 }

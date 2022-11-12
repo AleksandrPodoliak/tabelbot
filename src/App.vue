@@ -9,7 +9,7 @@
 @import './style/basic.scss';
 
 .container {
-  width: 1920px;
+  width: 1900px;
   margin: 0 auto;
 
   &-inner {

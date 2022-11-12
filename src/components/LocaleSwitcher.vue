@@ -7,7 +7,7 @@
         @click="toggleLocaleSelect"
       >
         {{ localeText }}
-        <!-- <img class="switcher-arrow" src="../assets/arrow-down.svg" alt="arrow"> -->
+        <img class="switcher-arrow" src="../assets/images/switcher-arrow.svg" alt="arrow">
       </div>
     </div>
     
@@ -111,15 +111,16 @@ export default {
   }
 
   &-button {
+    height: 44px;
     display: flex;
-    line-height: 200%;
     align-items: center;
-    padding: 0 8px;
-    background: rgba(85, 129, 241, 0.21);
+    padding: 0 1rem;
+    background: rgba(209, 229, 255, 0.5);
     backdrop-filter: blur(2px);
     border-radius: 4px;
-    font-size: 14px;
-    color: #00B2FF;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 200%;
     cursor: pointer;
     user-select: none;
   }
@@ -132,56 +133,30 @@ export default {
     width: min-content;
     position: absolute;
     z-index: 10;
-    right: 0;
+    right: 4px;
 
     &__list {
       padding: 0 20px;
-      background: #011343;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      background: #E2EFFE;
+      box-shadow: 0px 4px 4px rgba(87, 115, 166, 0.25);
+      border-radius: 4px;
+      list-style: none;
     }
 
     &__item {
       padding: 20px 10px;
-      font-size: 14px;
-      color: #FFFFFF;
+      font-weight: 500;
+      font-size: 1.125rem;
       user-select: none;
+      text-transform: uppercase;
       cursor: pointer;
 
       &:hover {
-        color: #00B2FF;
+        color: #1632D4;
       }
 
       &:not(:last-child) {
-        border-bottom: 1px solid rgba(230, 230, 254, 0.1);
-      }
-    }
-  }
-
-}
-
-@media screen and (max-width: 420px) {
-
-  .switcher {
-
-    &-dropdown {
-      display: none;
-    }
-
-    &-select {
-      bottom: 0;
-      left: 100%;
-    }
-
-    &-menu {
-      display: flex;
-
-      .switcher-button + .switcher-button {
-        margin-left: 1rem;
-      }
-
-      .selected {
-        background: #00B2FF;
-        color: #fff;
+        border-bottom: 1px solid #fff;
       }
     }
   }
