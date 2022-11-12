@@ -63,5 +63,41 @@
     "descr_free": "",
     "text_button": "",
     "text_button_free": ""
+  },
+  "popup": {
+    "title": "",
+    "title_success": "",
+    "title_error": "",
+    "input_companyname": {
+      "label": "",
+      "placeholder": "",
+      "error": ""
+    },
+    "input_name": {
+      "label": "",
+      "placeholder": "",
+      "error": ""
+    },
+    "input_phone": {
+      "label": "",
+      "placeholder": "",
+      "error": ""
+    },
+    "input_mail": {
+      "label": "",
+      "placeholder": "",
+      "error": ""
+    },
+    "input_check": {
+      "document": ""
+    },
+    "sum": "",
+    "curr": "",
+    "success": "",
+    "error": "",
+    "button": "",
+    "button_pay": "",
+    "button_success": "",
+    "button_back": ""
   }
 }

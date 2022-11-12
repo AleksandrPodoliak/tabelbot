@@ -93,8 +93,11 @@
     },
     "sum": "Всего",
     "curr": "грн",
+    "success": "Наш сотрудник свяжется с вами для дальнейшей координации.<br><br>Для подключения TIMEBOT, отправьте заполненную форму с информацией о сотрудниках в телеграм <a style=\"color: #FF725E; text-decoration: underline;\" href=\"https://t.me/kodoffice\" target=\"_blank\">&#64;kodoffice</a>.",
+    "error": "Что-то пошло не так. Попробуйте еще раз",
     "button": "ПОЛУЧИТЬ БЕСПЛАТНО",
     "button_pay": "КУПИТЬ",
+    "button_success": "СКАЧАТЬ ШАБЛОН",
     "button_back": "Назад"
   }
 }

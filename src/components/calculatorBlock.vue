@@ -74,24 +74,36 @@
 
     <popUp 
       v-if="showPoUpSuccess"
-      class="popup"
+      class="popup-success"
       :title="$t('popup.title_success')"
       :button_back="false"
       @close="showPoUpSuccess = false"
       @click="showPoUpSuccess = false"
     >
-
+      <div 
+        class="popup-success__text"
+        v-html="$t('popup.success')"
+      > 
+      </div>
+      <customButton 
+        :width="'100%'"
+        :text="$t('popup.button_success')"
+        @click="openGoogleFile"
+      />
     </popUp>
 
     <popUp 
       v-if="showPoUpError"
-      class="popup"
+      class="popup-error"
       :title="$t('popup.title_error')"
       :button_back="false"
       @close="showPoUpError = false"
       @click="showPoUpError = false"
-    >
-      <img class="popup__error_img" src="../assets/images/contacts-error.png" alt="error">
+    > 
+      <div class="popup-error__text"> 
+        {{ $t('popup.error') }}
+      </div>
+      <img class="popup-error__img" src="../assets/images/contacts-error.png" alt="error">
     </popUp>
   </div>
 </template>
@@ -157,6 +169,9 @@ export default {
     },
     togglePopUpError() {
       this.showPoUpError = !this.showPoUpError;
+    },
+    openGoogleFile() {
+      window.open('https://docs.google.com/spreadsheets/d/1h-Y27fpWpb8FoPDaWLXnCJ8r_WiPPWd4PXrQs9A0slM/edit#gid=0');
     },
   },
   watch: {
@@ -312,6 +327,31 @@ export default {
       font-weight: 500;
       font-size: 1.125rem;
     }
+  }
+}
+
+.popup-success {
+  &__text {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 150%;
+    margin-bottom: 40px;
+  }
+}
+
+.popup-error {
+
+  &__text {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 150%;
+    margin-bottom: 20px;
+  }
+  &__img {
+    display: block;
+    margin: 0 auto;
   }
 }
 </style>
