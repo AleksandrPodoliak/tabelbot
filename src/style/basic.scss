@@ -179,30 +179,9 @@ a:focus {
     input {
       padding: 0.625rem 2rem;
   
-      &:hover,
-      &:focus,
-      &:focus-visible {
-      }
-  
-      &:focus,
-      &:focus-visible {
-      }
-  
       &::placeholder {
         font-size: 1rem;
       }
-    }
-  
-    input[type=checkbox] {
-  
-      & ~ span {
-      }
-    }
-  
-    input[type=checkbox]::before {
-    }
-    
-    input[type=checkbox]:checked::before {
     }
   }
   
@@ -218,17 +197,6 @@ a:focus {
     &::before {
       top: calc(2.425rem + 1px);
       font-size: 1rem;
-    }
-  }
-  
-  .input.invalid {
-    input {
-  
-      & ~ label {
-      }
-    }
-  
-    div {
     }
   }
 }

@@ -109,11 +109,12 @@
 </template>
 
 <script>
-// import { requester } from '@/requester';
 
 import popUp from './popUp.vue'
 import formPrice from './formPrice.vue';
 import customButton from './customButton.vue';
+
+import { requester } from '@/requester';
 
 export default {
   name: "calculatorBlock",
@@ -125,8 +126,8 @@ export default {
   data() {
     return {
       countOfemployee: 3,
-      // usd_cur: 0,
-      usd_cur: 30,
+      usd_cur: 0,
+      // usd_cur: 30,
 
       showPoUpPrice: false,
       showPoUpSuccess: false,
@@ -134,16 +135,16 @@ export default {
     }
   },
   async mounted() {
-    // const payload  = {
-    //   method: 'currency'
-    // };
+    const payload  = {
+      method: 'currency'
+    };
     
-    // try {
-    //   const data = await requester(payload);
-    //   this.usd_cur = data.result;
-    // } catch (error) {
-    //   console.error(error);
-    // }
+    try {
+      const data = await requester(payload);
+      this.usd_cur = data.result;
+    } catch (error) {
+      console.error(error);
+    }
   },
   computed: {
     buttonWidth() {
