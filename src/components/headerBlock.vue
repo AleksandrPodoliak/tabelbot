@@ -103,7 +103,6 @@ export default {
   }
 
   &-nav {
-    overflow: scroll;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -179,6 +178,7 @@ export default {
     }
 
     &-nav {
+      overflow: scroll;
       display: none;
       position: absolute;
       z-index: 9;
