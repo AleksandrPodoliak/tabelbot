@@ -7,18 +7,22 @@
     <div class="content">
       <div class="content-row">
         <div class="content-row-item">
+          <div class="content-row-item__step">{{ $t('connection.text_step') }} 1</div>
           <img class="content-row-item__image1" src="../assets/images/instruction-img1.png" alt="instruction1">
           <div class="content-row-item__text" v-html="$t('instruction.text_item1')"></div>
         </div>
         <div class="content-row-item">
+          <div class="content-row-item__step">{{ $t('connection.text_step') }} 2</div>
           <img class="content-row-item__image2" src="../assets/images/instruction-img2.png" alt="instruction2">
           <div class="content-row-item__text" v-html="$t('instruction.text_item2')"></div>
         </div>
         <div class="content-row-item">
+          <div class="content-row-item__step">{{ $t('connection.text_step') }} 3</div>
           <img class="content-row-item__image3" src="../assets/images/instruction-img3.png" alt="instruction3">
           <div class="content-row-item__text" v-html="$t('instruction.text_item3')"></div>
         </div>
         <div class="content-row-item">
+          <div class="content-row-item__step">{{ $t('connection.text_step') }} 4</div>
           <img class="content-row-item__image4" src="../assets/images/instruction-img4.png" alt="instruction4">
           <div class="content-row-item__text" v-html="$t('instruction.text_item4')"></div>
         </div>
@@ -70,6 +74,10 @@ export default {
         flex-direction: column;
         align-items: center;
 
+        &__step {
+          display: none;
+        }
+
         &__image1 {
           width: 247px; 
           height: 262px;
@@ -100,6 +108,62 @@ export default {
           font-weight: 500;
           font-size: 1.125rem;
           text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .instruction {
+    .content {
+
+      &-row {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+
+        &-item {
+          width: 45%;
+          margin-bottom: 40px;
+
+          &__step {
+            display: block;
+            font-weight: 700;
+            font-size: 0.875rem;
+            line-height: 200%;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+          }
+
+          &__image1 {
+            width: 80%;
+            height: unset;
+            margin-bottom: 10px;
+          }
+          
+          &__image2 {
+            width: 80%;
+            height: unset;
+            margin-bottom: 10px;
+          }
+
+          &__image3 {
+            width: 80%;
+            height: unset;
+            margin-bottom: 10px;
+          }
+
+          &__image4 {
+            width: 80%;
+            height: unset;
+            margin-bottom: 10px;
+          }
+
+          &__text {
+            font-size: 0.75rem;
+            line-height: 200%;
+          }
         }
       }
     }

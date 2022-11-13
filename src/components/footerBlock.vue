@@ -50,4 +50,25 @@ export default {
   }
 }
 
+@media screen and (max-width: 420px) {
+
+  .footer {
+    min-width: unset;
+    
+    &-wrapper {
+      width: 100%;
+      padding: 10px 0;
+      justify-content: center;
+
+      img {
+        display: none;
+      }
+    }
+
+    &-copy {
+      font-size: 0.75rem;
+    }
+  }
+}
+
 </style>

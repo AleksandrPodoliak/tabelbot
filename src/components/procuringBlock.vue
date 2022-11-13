@@ -72,4 +72,27 @@ ul {
   }
 }
 
+@media screen and (max-width: 420px) {
+
+  ul {
+
+    li {
+      font-size: 1rem;
+    }
+  }
+
+  .procuring {
+    .content {
+
+      &-column {
+
+        &__title {
+          margin: 40px 0 20px;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
 </style>

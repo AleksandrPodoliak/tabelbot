@@ -3,8 +3,9 @@
     <div class="content">
       <div class="content__logo">
         <img class="content__logo-img" src="../assets/images/present-logo.png" alt="logo">
+        <img class="content__logo-img_phone" src="../assets/images/present-image-phone.png" alt="phone">
         <div class="content__logo-text"> {{ this.$t('presentation.text') }} </div>
-        <customButton 
+        <customButton
           :width="'330px'"
           :icon="require('../assets/images/present-icon.svg')"
           :text="'TELEGRAM BOT'"
@@ -60,6 +61,10 @@ export default {
         margin-bottom: 145px;
       }
 
+      &-img_phone {
+        display: none;
+      }
+
       &-text {
         width: 100%;
         font-weight: 300;
@@ -74,6 +79,43 @@ export default {
       z-index: 3;
       right: -240px;
       top: -80px;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+    
+  .presentation {
+    background: none;
+
+    .content {
+
+      &__logo {
+        width: 100%;
+        margin-bottom: 0;
+
+        &-img {
+          width: 100%;
+          height: unset;
+          margin-bottom: 20px;
+        }
+
+        &-img_phone {
+          display: block;
+          margin-bottom: 20px;
+        }
+
+        &-text {
+          font-weight: 300;
+          font-size: 1rem;
+          line-height: 200%;
+          margin-bottom: 20px;
+        }
+      }
+
+      &__image {
+        display: none;
+      }
     }
   }
 }

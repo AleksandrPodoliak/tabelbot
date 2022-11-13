@@ -249,6 +249,7 @@ export default {
   justify-content: space-between;
 
   &__sum {
+    text-transform: uppercase;
     font-weight: 700;
     font-size: 1.25rem;
   }
@@ -261,6 +262,23 @@ export default {
 
 #customButton {
   margin-top: 40px;
+}
+
+@media screen and (max-width: 420px) {
+  .final-sum {
+
+    &__sum {
+      font-size: 1rem;
+    }
+
+    &__curr {
+      font-size: 1rem;
+    }
+  }
+
+  #customButton {
+    margin-top: 20px;
+  }
 }
 
 </style>

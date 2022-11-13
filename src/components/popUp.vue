@@ -88,4 +88,42 @@ export default {
   }
 }
 
+@media screen and (max-width: 420px) {
+  
+  .popup {
+
+    &-container {
+      width: 100%;
+      padding: 1.5rem;
+      border-radius: 0;
+      height: 100vh;
+      overflow: scroll;
+
+      &__exit {
+        display: none;
+      }
+
+      &__back {
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+        font-size: 0.875rem;
+        margin-bottom: 2rem;
+        letter-spacing: -0.02em;
+
+        & img {
+          margin-right: 0.6rem;
+          height: 0.8rem;
+          width: 0.6rem;
+        }
+      }
+
+      &__title {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
 </style>

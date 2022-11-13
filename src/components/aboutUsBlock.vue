@@ -112,4 +112,56 @@ ul {
   }
 }
 
+@media screen and (max-width: 420px) {
+
+  ul {
+    li {
+      font-size: 1rem;
+    }
+  }
+
+  .about {
+    .content {
+
+      &-row {
+        flex-direction: column;
+
+        &-item {
+          width: 100%;
+          margin-bottom: 20px;
+
+          &__image1 {
+            width: 100%;
+            height: unset;
+            margin-bottom: 20px;
+          }
+          
+          &__image2 {
+            width: 100%;
+            height: unset;
+            margin-bottom: 20px;
+          }
+
+          &__title {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      &-column {
+
+        &__image {
+          width: 100%;
+          height: unset;
+          margin-bottom: 20px;
+        }
+
+        &__title {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
 </style>

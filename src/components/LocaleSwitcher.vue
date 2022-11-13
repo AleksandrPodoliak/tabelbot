@@ -162,4 +162,36 @@ export default {
   }
 }
 
+@media screen and (max-width: 420px) {
+
+.switcher {
+
+  &-dropdown {
+    display: none;
+  }
+
+  &-select {
+    bottom: 0;
+    left: 100%;
+  }
+
+  &-menu {
+    display: flex;
+
+    .switcher-button {
+      box-shadow: 0px 4px 4px rgba(87, 115, 166, 0.25);
+      backdrop-filter: blur(2px);
+    }
+
+    .switcher-button + .switcher-button {
+      margin-left: 1rem;
+    }
+
+    .selected {
+      color: #1632D4;
+    }
+  }
+}
+}
+
 </style>

@@ -1,103 +1,104 @@
 {
   "header": {
-    "nav":  ["О ПРОДУКТЕ", "ВОЗМОЖНОСТИ", "ПОДКЛЮЧЕНИЕ", "ПРАЙС", "ИНСТРУКЦИЯ", "ОТЧЕТ"]
+    "nav":  ["ABOUT PRODUCT", "FEATURES", "CONNECTION", "PRICE", "INSTRUCTIONS", "REPORT"]
   },
   "presentation": {
-    "text": ""
+    "text": "TIMEBOT is your tool for tracking employees' time in the workplace"
   },
   "about": {
-    "title": "",
-    "subtitle1": "",
-    "list1_item1": "",
-    "list1_item2": "",
-    "subtitle2": "",
-    "list2_item1": "",
-    "list2_item2": "",
-    "list2_item3": "",
-    "list2_item4": "",
-    "subtitle3": "",
-    "list3_item1": "",
-    "list3_item2": ""
+    "title": "WHAT IS TIMEBOT",
+    "subtitle1": "For the employer:",
+    "list1_item1": "generates a statement",
+    "list1_item2": "communication with employees on timesheet adjustments",
+    "subtitle2": "For an employee:",
+    "list2_item1": "fixes the time of the beginning and end of the working day",
+    "list2_item2": "fixes the location of the employee during timesheet",
+    "list2_item3": "reminds you of the beginning and end of the working day",
+    "list2_item4": "accepts the report in the absence of the workplace according to the established schedule",
+    "subtitle3": "TIMEBOT collects information in the form of two tables with the following data:",
+    "list3_item1": "time sheeting date, time in hours and minutes format, employee phone number, unique employee login, type of action start or end of the day, employee within the radius of the workplace or not, user coordinates during time sheeting",
+    "list3_item2": "the date the report was added, the employee's unique login, the text of the employee's report on the reasons for absence from work"
   },
   "procuring": {
-    "title": "",
-    "list1_item1": "",
-    "list1_item2": "",
-    "list1_item3": "",
-    "list1_item4": "",
-    "subtitle1": "",
-    "list2_item1": "",
-    "list2_item2": "",
-    "list2_item3": "",
-    "list2_item4": "",
-    "list2_item5": "",
-    "list2_item6": "",
-    "list2_item7": ""
+    "title": "TIMEBOT WILL PROVIDE",
+    "list1_item1": "saving time - no need to waste time clarifying the circumstances of being late - there is a clear time and coordinates",
+    "list1_item2": "real information - get accurate and real information about the time when the employee came and left the workplace, this is done by the program automatically",
+    "list1_item3": "cost savings - days of absenteeism are not taken into account in the report card",
+    "list1_item4": "labor discipline - compliance with the work schedule disciplines employees",
+    "subtitle1": "CAPABILITIES:",
+    "list2_item1": "serves as the basis and confirmation of the corresponding payroll",
+    "list2_item2": "the employee works in a familiar messenger, has the ability to view the interaction history, he does not need to download and install anything",
+    "list2_item3": "text format eliminates unnecessary communication",
+    "list2_item4": "automatic filling of data eliminates the human factor, when information can be intentionally or unintentionally distorted",
+    "list2_item5": "simple and convenient to use",
+    "list2_item6": "allows you to set individual settings for the work schedule of each employee",
+    "list2_item7": "works 24/7, which allows you to receive timesheet information and reports from employees around the clock"
   },
   "connection": {
-    "title": "",
-    "text_item1": "",
-    "text_item2": "",
-    "text_item3": "",
-    "text_button": ""
+    "title": "CONNECTIVITY",
+    "text_item1": "terms of the <a target='_blank' href='https://drive.google.com/file/d/1dbrJEK_6aiTgj0Oa7ii6eb2J1oQvtl2c/view'>OFFER AGREEMENT</a>, monthly payment (up to three employees free of charge)",
+    "text_item2": "send the <a target='_blank' href='https://docs.google.com/spreadsheets/d/1h-Y27fpWpb8FoPDaWLXnCJ8r_WiPPWd4PXrQs9A0slM/edit#gid=0'>completed form</a> with information about employees to telegram &#64;kodoffice",
+    "text_item3": "from the next day, employees are time-tabled through timebot",
+    "text_button": "DOWNLOAD FORM",
+    "text_step": "step"
   },
   "instruction": {
-    "title": "",
-    "text_item1": "",
-    "text_item2": "",
-    "text_item3": "",
-    "text_item4": "",
-    "text_button": ""
+    "title": "USER'S MANUAL",
+    "text_item1": "REGISTER",
+    "text_item2": "SHARE YOUR GEOLOCATION",
+    "text_item3": "WORK TIME IS FIXED",
+    "text_item4": "DO NOT FORGET TO CHECK OUT AT THE END OF THE WORKING DAY",
+    "text_button": "DETAILED INSTRUCTIONS"
   },
   "report": {
-    "title": "",
-    "list_item1": "",
-    "list_item2": ""
+    "title": "REPORT",
+    "list_item1": "information is sent monthly in the form of a table with data on timesheets and reports with arguments of employees",
+    "list_item2": "if necessary, you can get specific information about a specific employee or for a specific period by requesting it via telegram administrator &#64;kodoffice"
   },
   "calculator": {
-    "title": "",
-    "subtitle": "",
-    "label_item1": "",
-    "label_item2": "",
-    "label_item3": "",
-    "descr_free": "",
-    "text_button": "",
-    "text_button_free": ""
+    "title": "TIMEBOT IS AVAILABLE",
+    "subtitle": "ONLY $1 PER MONTH PER EMPLOYEE",
+    "label_item1": "NUMBER OF EMPLOYEES",
+    "label_item2": "USD VALUE",
+    "label_item3": "UAH VALUE",
+    "descr_free": "Up to 3 employees FREE*",
+    "text_button": "BUY",
+    "text_button_free": "GET FREE"
   },
   "popup": {
-    "title": "",
-    "title_success": "",
-    "title_error": "",
+    "title": "TIMEBOT SERVICE PAYMENT",
+    "title_success": "Thank you!",
+    "title_error": "OH-HOH",
     "input_companyname": {
-      "label": "",
-      "placeholder": "",
-      "error": ""
+      "label": "COMPANY NAME",
+      "placeholder": "Enter your company name",
+      "error": "* Fill in the field"
     },
     "input_name": {
-      "label": "",
-      "placeholder": "",
-      "error": ""
+      "label": "NAME OF CONTACT PERSON",
+      "placeholder": "Enter your full name",
+      "error": "* Fill in the field"
     },
     "input_phone": {
-      "label": "",
-      "placeholder": "",
-      "error": ""
+      "label": "PHONE NUMBER",
+      "placeholder": "XXXXXXXXX",
+      "error": "* Phone format - XXXXXXXXX"
     },
     "input_mail": {
-      "label": "",
-      "placeholder": "",
-      "error": ""
+      "label": "Email",
+      "placeholder": "Enter your email",
+      "error": "* Email format - "
     },
     "input_check": {
-      "document": ""
+      "document": "I accept the terms of the <a style=\"color: #FF725E; text-decoration: underline;\" href=\"https://drive.google.com/file/d/1dbrJEK_6aiTgj0Oa7ii6eb2J1oQvtl2c/view\" target=\"_blank\">Agreement</a>"
     },
-    "sum": "",
-    "curr": "",
-    "success": "",
-    "error": "",
-    "button": "",
-    "button_pay": "",
-    "button_success": "",
-    "button_back": ""
+    "sum": "Total",
+    "curr": "UAH",
+    "success": "Our employee will contact you for further coordination.<br><br>To connect TimeBot, send the completed form with information about employees to telegram <a style=\"color: #FF725E; text-decoration: underline;\" href=\"https://t.me/kodoffice\" target=\"_blank\">&#64;kodoffice</a>.",
+    "error": "Something went wrong. Try again",
+    "button": "GET FREE",
+    "button_pay": "BUY",
+    "button_success": "DOWNLOAD TEMPLATE",
+    "button_back": "Back"
   }
 }

@@ -58,7 +58,7 @@
     <popUp 
       v-if="showPoUpPrice"
       class="popup"
-      :title="'Оплата услуги таймбот'"
+      :title="$t('popup.title')"
       @close="togglePopUpPrice"
     >
       <formPrice
@@ -109,7 +109,7 @@
 </template>
 
 <script>
-import { requester } from '@/requester';
+// import { requester } from '@/requester';
 
 import popUp from './popUp.vue'
 import formPrice from './formPrice.vue';
@@ -125,8 +125,8 @@ export default {
   data() {
     return {
       countOfemployee: 3,
-      usd_cur: 0,
-      // usd_cur: 30,
+      // usd_cur: 0,
+      usd_cur: 30,
 
       showPoUpPrice: false,
       showPoUpSuccess: false,
@@ -134,16 +134,16 @@ export default {
     }
   },
   async mounted() {
-    const payload  = {
-      method: 'currency'
-    };
+    // const payload  = {
+    //   method: 'currency'
+    // };
     
-    try {
-      const data = await requester(payload);
-      this.usd_cur = data.result;
-    } catch (error) {
-      console.error(error);
-    }
+    // try {
+    //   const data = await requester(payload);
+    //   this.usd_cur = data.result;
+    // } catch (error) {
+    //   console.error(error);
+    // }
   },
   computed: {
     buttonWidth() {
@@ -265,6 +265,8 @@ export default {
             width: 32px;
             height: 32px;
             background-image: url('../assets/images/calc-icon1.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
           }
         }
 
@@ -279,6 +281,8 @@ export default {
             width: 43px;
             height: 32px;
             background-image: url('../assets/images/calc-icon2.png');
+            background-size: cover;
+            background-repeat: no-repeat;
           }
 
           &::before {
@@ -304,6 +308,8 @@ export default {
             width: 43px;
             height: 32px;
             background-image: url('../assets/images/calc-icon3.png');
+            background-size: cover;
+            background-repeat: no-repeat;
           }
 
           &::before {
@@ -352,6 +358,90 @@ export default {
   &__img {
     display: block;
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .calculator {
+    .content {
+
+      &-subtitle {
+        text-align: center;
+        line-height: 200%;
+        font-size: 1rem;
+        margin-bottom: 20px;
+      }
+
+      &-row {
+        flex-direction: column;
+        margin-bottom: 0;
+
+        &-item {
+          width: 100%;
+          margin-bottom: 20px;
+
+          &__label {
+            font-size: 0.875rem;
+            margin-bottom: 10px;
+          }
+
+          &__wrapper-input {
+
+            input {
+              height: unset;
+              padding: 10px 40px;
+              font-size: 1.125rem;
+              line-height: 150%;
+            }
+          }
+
+          .input-count {
+            &::after {
+              right: 40px;
+              margin-top: -9px;
+              width: 18px;
+              height: 18px;
+            }
+          }
+
+          .input-usd {
+            &::after {
+              margin-top: -9px;
+              width: 24px;
+              height: 18px;
+              right: 90px;
+            }
+
+            &::before {
+              margin-top: -9px;
+              font-size: 18px;
+              line-height: 100%;
+            }
+          }
+
+          .input-uah {
+            &::after {
+              margin-top: -9px;
+              width: 24px;
+              height: 18px;
+              right: 90px;
+            }
+
+            &::before {
+              margin-top: -9px;
+              font-size: 18px;
+              line-height: 100%;
+            }
+          }
+        }
+      }
+
+      &-descr {
+        margin-bottom: 20px;
+        font-size: 1rem;
+        line-height: 200%;
+      }
+    }
   }
 }
 </style>

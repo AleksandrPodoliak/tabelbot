@@ -63,4 +63,30 @@ ul {
     }
   }
 }
+
+@media screen and (max-width: 420px) {
+
+  ul {
+    li {
+      font-size: 1rem;
+    }
+  }
+  .report {
+    .content {
+
+      &-row {
+        margin-bottom: 30px;
+
+        &-item {
+
+          &__image1 {
+            width: 100%;
+            height: unset;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
 </style>

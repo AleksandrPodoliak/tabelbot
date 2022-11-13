@@ -37,7 +37,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 76px;
+  padding: 20px 0;
   border-radius: 100px;
   user-select: none;
   cursor: pointer;
@@ -77,7 +77,7 @@ export default {
   box-shadow: none;
   font-weight: 900;
   font-size: 1.125rem;
-  line-height: 200%;
+  line-height: 150%;
   color: #27316B;
 
   &:hover {
@@ -100,6 +100,25 @@ export default {
     box-shadow: none;
     color: #27316B;
     cursor: auto;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  .button {
+    padding: 10px 0;
+    width: 100% !important;
+    font-size: 1rem;
+
+    &__icon {
+      width: 22px;
+      height: 20px;
+      margin-right: 1.25rem;
+    }
+  }
+
+  .secondary {
+    font-size: 1rem;
   }
 }
 
