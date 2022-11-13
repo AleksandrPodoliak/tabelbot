@@ -76,7 +76,6 @@
       v-if="showPoUpSuccess"
       class="popup-success"
       :title="$t('popup.title_success')"
-      :button_back="false"
       @close="showPoUpSuccess = false"
       @click="showPoUpSuccess = false"
     >
@@ -96,7 +95,6 @@
       v-if="showPoUpError"
       class="popup-error"
       :title="$t('popup.title_error')"
-      :button_back="false"
       @close="showPoUpError = false"
       @click="showPoUpError = false"
     > 
@@ -442,6 +440,13 @@ export default {
         font-size: 1rem;
         line-height: 200%;
       }
+    }
+  }
+
+  .popup-error {
+
+    &__img {
+      width: 100%;
     }
   }
 }

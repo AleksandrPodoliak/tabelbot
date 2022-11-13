@@ -119,7 +119,7 @@ export default {
       }
 
       &__title {
-        font-size: 1rem;
+        font-size: 1.125rem;
         margin-bottom: 2rem;
       }
     }
