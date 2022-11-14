@@ -301,7 +301,7 @@ export default {
           &::after {
             position: absolute;
             z-index: 3;
-            right: 100px;
+            right: 103px;
             top: 50%;
             margin-top: -12px;
             content: '';
@@ -416,7 +416,6 @@ export default {
             &::before {
               margin-top: -9px;
               font-size: 18px;
-              line-height: 100%;
             }
           }
 
@@ -431,7 +430,6 @@ export default {
             &::before {
               margin-top: -9px;
               font-size: 18px;
-              line-height: 100%;
             }
           }
         }
