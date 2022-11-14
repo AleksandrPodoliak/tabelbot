@@ -125,24 +125,21 @@ export default {
           
 
           &__image1 {
-            padding: 20px 40px;
-            width: 100%;
+            width: 80%;
             height: unset;
-            margin-bottom: 20px;
+            margin: 20px 0;
           }
           
           &__image2 {
-            padding: 20px 40px;
-            width: 100%;
+            width: 80%;
             height: unset;
-            margin-bottom: 20px;
+            margin: 20px 0;
           }
 
           &__image3 {
-            padding: 20px 40px;
-            width: 100%;
+            width: 80%;
             height: unset;
-            margin-bottom: 20px;
+            margin: 20px 0;
           }
 
           &__text {
