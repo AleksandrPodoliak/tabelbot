@@ -225,13 +225,13 @@ export default {
 
           input {
             width: 100%;
-            height: 90px;
+            padding: 20px 40px;
             border: 1px solid #27316B;
             border-radius: 100px;
             background-color: #F6FAFF;
-            padding: 0 40px;
             font-weight: 700;
-            font-size: 2rem;
+            font-size: 1.5rem;
+            color: #27316B;
 
             &::-webkit-outer-spin-button,
             &::-webkit-inner-spin-button {
