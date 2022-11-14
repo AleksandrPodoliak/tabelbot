@@ -259,10 +259,10 @@ export default {
             z-index: 3;
             right: 40px;
             top: 50%;
-            margin-top: -16px;
+            margin-top: -12px;
             content: '';
-            width: 32px;
-            height: 32px;
+            width: 24px;
+            height: 24px;
             background-image: url('../assets/images/calc-icon1.svg');
             background-size: cover;
             background-repeat: no-repeat;
@@ -273,12 +273,12 @@ export default {
           &::after {
             position: absolute;
             z-index: 3;
-            right: 120px;
+            right: 100px;
             top: 50%;
-            margin-top: -16px;
+            margin-top: -12px;
             content: '';
-            width: 43px;
-            height: 32px;
+            width: 32px;
+            height: 24px;
             background-image: url('../assets/images/calc-icon2.png');
             background-size: cover;
             background-repeat: no-repeat;
@@ -290,9 +290,10 @@ export default {
             z-index: 3;
             right: 40px;
             top: 50%;
-            margin-top: -1rem;
-            font-size: 2rem;
+            margin-top: -0.75rem;
+            font-size: 1.5rem;
             font-weight: 700;
+            line-height: 100%;
           }
         }
 
@@ -300,12 +301,12 @@ export default {
           &::after {
             position: absolute;
             z-index: 3;
-            right: 120px;
+            right: 100px;
             top: 50%;
-            margin-top: -16px;
+            margin-top: -12px;
             content: '';
-            width: 43px;
-            height: 32px;
+            width: 32px;
+            height: 24px;
             background-image: url('../assets/images/calc-icon3.png');
             background-size: cover;
             background-repeat: no-repeat;
@@ -317,9 +318,10 @@ export default {
             z-index: 3;
             right: 40px;
             top: 50%;
-            margin-top: -1rem;
-            font-size: 2rem;
+            margin-top: -0.75rem;
+            font-size: 1.5rem;
             font-weight: 700;
+            line-height: 100%;
           }
         }
       }
