@@ -9,11 +9,11 @@
 @import './style/basic.scss';
 
 .container {
-  width: 1900px;
+  width: 1440px;
   margin: 0 auto;
 
   &-inner {
-    padding: 60px 250px;
+    padding: 60px 20px;
   }
 }
 

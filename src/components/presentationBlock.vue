@@ -13,7 +13,7 @@
         />
       </div>
       <div class="content__image">
-        <img src="../assets/images/present-phone.png" alt="phone">
+        <!-- <img src="../assets/images/present-phone.png" alt="phone"> -->
       </div>
     </div>
   </div>
@@ -39,11 +39,11 @@ export default {
 <style lang="scss" scoped>
 
 .presentation {
-  background-image: url('../assets/images/present-bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
 
   .content {
+    background-image: url('../assets/images/present-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -86,9 +86,9 @@ export default {
 @media screen and (max-width: 420px) {
     
   .presentation {
-    background: none;
-
+    
     .content {
+      background: none;
 
       &__logo {
         width: 100%;

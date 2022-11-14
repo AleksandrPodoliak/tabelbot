@@ -53,7 +53,7 @@
       {{ $t('popup.input_phone.error') }}
     </div>
   </div>
-  <div 
+  <!-- <div 
     class="input input-mail"
     :class="{ invalid: v$.mail.$dirty && v$.mail.required.$invalid || v$.mail.$dirty && v$.mail.email.$invalid }"
   >
@@ -69,7 +69,7 @@
     <div v-if="v$.mail.$error">
       {{ $t('popup.input_mail.error')+'email@example.com' }}
     </div>
-  </div>
+  </div> -->
   <div 
     class="input input-check"
     :class="{ invalid: v$.isRulesAccept.$dirty && v$.isRulesAccept.isRulesAcceptValidator.$invalid }"
@@ -111,7 +111,8 @@
 import customButton from './customButton.vue';
 
 import { useVuelidate } from '@vuelidate/core'
-import { required, email } from '@vuelidate/validators'
+import { required } from '@vuelidate/validators'
+// import { required, email } from '@vuelidate/validators'
 import { requester } from '../requester.js'
 
 const phoneValidator = (value) => {
@@ -137,7 +138,7 @@ export default {
       companyname: '',
       username: '',
       phone: '',
-      mail: '',
+      // mail: '',
       isRulesAccept: false,
       requestInProgress: false,
     }
@@ -147,7 +148,7 @@ export default {
       companyname: { required, $autoDirty: true },
       username: { required, $autoDirty: true },
       phone: { required, phoneValidator, $autoDirty: true },
-      mail: { required, email, $autoDirty: true },
+      // mail: { required, email, $autoDirty: true },
       isRulesAccept: { isRulesAcceptValidator, $autoDirty: true },
     }
   },
@@ -167,12 +168,12 @@ export default {
       this.companyname = '';
       this.username = '';
       this.phone = '';
-      this.mail = '';
+      // this.mail = '';
       this.isRulesAccept = false;
       this.v$.companyname.$reset();
       this.v$.username.$reset();
       this.v$.phone.$reset();
-      this.v$.mail.$reset();
+      // this.v$.mail.$reset();
       this.v$.isRulesAccept.$reset();
     },
     async sendForm() {
@@ -187,7 +188,7 @@ export default {
             companyname: this.companyname,
             username: this.username,
             phone: '380'+this.phone,
-            mail: this.mail,
+            // mail: this.mail,
             sum: this.currentData.sum,
             lang: this.$i18n.locale,
           }
@@ -199,7 +200,7 @@ export default {
             companyname: this.companyname,
             username: this.username,
             phone: '380'+this.phone,
-            mail: this.mail,
+            // mail: this.mail,
             lang: this.$i18n.locale,
           }
         };

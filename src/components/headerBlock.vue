@@ -95,11 +95,11 @@ export default {
 
 .header {
   position: relative;
-  min-width: 1900px;
+  min-width: 1440px;
   background: linear-gradient(180deg, rgba(195, 207, 217, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
   
   &-wrapper {
-    padding: 30px 250px;
+    padding: 30px 20px;
   }
 
   &-nav {
