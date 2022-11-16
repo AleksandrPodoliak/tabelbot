@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     openTelegramLink() {
-      window.open('https://t.me/kodoffice');
+      window.open('https://t.me/yourworkingtime_bot');
     }
   },
 }

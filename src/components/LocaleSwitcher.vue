@@ -81,7 +81,7 @@ export default {
       if (this.$i18n.locale == 'uk') return 'UA'
       if (this.$i18n.locale == 'ru') return 'RU'
       if (this.$i18n.locale == 'en') return 'EN'
-      return 'Українська'
+      return 'UA'
     },
   },
   methods: {

@@ -48,7 +48,20 @@ export default {
   },
   methods: {
     openGoogleFile() {
-      window.open('https://docs.google.com/spreadsheets/d/1oyCibTYJN--Mu38bpIrId8Q2JhPDndX6emZHivExMVY/edit#gid=1588076205');
+      if (this.$i18n.locale == 'uk') {
+        window.open('https://docs.google.com/spreadsheets/d/1oyCibTYJN--Mu38bpIrId8Q2JhPDndX6emZHivExMVY/edit#gid=1233682452');
+        return
+      }
+      if (this.$i18n.locale == 'ru') {
+        window.open('https://docs.google.com/spreadsheets/d/1oyCibTYJN--Mu38bpIrId8Q2JhPDndX6emZHivExMVY/edit#gid=0');
+        return
+      }
+      if (this.$i18n.locale == 'en') {
+        window.open('https://docs.google.com/spreadsheets/d/1oyCibTYJN--Mu38bpIrId8Q2JhPDndX6emZHivExMVY/edit#gid=1588076205');
+        return
+      }
+
+      window.open('https://docs.google.com/spreadsheets/d/1oyCibTYJN--Mu38bpIrId8Q2JhPDndX6emZHivExMVY/edit#gid=1233682452');
     }
   },
 }
