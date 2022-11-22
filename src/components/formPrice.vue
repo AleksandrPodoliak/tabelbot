@@ -190,6 +190,7 @@ export default {
             phone: '380'+this.phone,
             // mail: this.mail,
             sum: this.currentData.sum,
+            count: this.currentData.countOfemployee,
             lang: this.$i18n.locale,
           }
         };

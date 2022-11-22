@@ -37,7 +37,7 @@
   "connection": {
     "title": "ПОДКЛЮЧЕНИЕ",
     "text_item1": "условия <a target='_blank' href='https://drive.google.com/file/d/1dbrJEK_6aiTgj0Oa7ii6eb2J1oQvtl2c/view'>Договора оферты</a>, оплата ежемесячно (до трех сотрудников бесплатно)",
-    "text_item2": "отправляете <a target='_blank' href='https://docs.google.com/spreadsheets/d/1h-Y27fpWpb8FoPDaWLXnCJ8r_WiPPWd4PXrQs9A0slM/edit#gid=0'>заполненную форму</a> с информацией о сотрудниках в телеграм &#64;kodoffice",
+    "text_item2": "отправляете <a target='_blank' href='https://docs.google.com/spreadsheets/d/1h-Y27fpWpb8FoPDaWLXnCJ8r_WiPPWd4PXrQs9A0slM/edit#gid=0'>заполненную форму</a> с информацией о сотрудниках в телеграм <a target='_blank' href='https://t.me/kodoffice'>&#64;kodoffice</a>",
     "text_item3": "со следующего дня сотрудники табелируются через timebot",
     "text_button": "СКАЧАТЬ ФОРМУ",
     "text_step": "шаг"
