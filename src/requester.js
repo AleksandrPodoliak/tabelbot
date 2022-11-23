@@ -1,7 +1,7 @@
 export async function requester(payload = {}) {
 
   try {
-    const resp = await fetch(`https://science-school.herokuapp.com/${payload.method}`, {
+    const resp = await fetch(`https://timebot-app.herokuapp.com/${payload.method}`, {
       method: "POST",
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(payload)
